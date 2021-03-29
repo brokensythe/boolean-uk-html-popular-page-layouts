@@ -22,7 +22,7 @@
 }
 
 .left-menu {
-  grid-area: .left-menu;
+  grid-area: left-menu;
   background-color: purple;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .right-menu {
-  grid-area: .right-menu;
+  grid-area: right-menu;
   background-color: silver;
 }
 
