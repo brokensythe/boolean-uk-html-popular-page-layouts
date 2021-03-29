@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: blueviolet;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template:
+    "left-toolbar left-menu header " 1fr
+    "left-toolbar left-menu main" 9fr /
+    0.5fr 3fr 12.5fr;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.left-toolbar {
+  grid-area: left-toolbar;
+  background-color: silver;
+}
+
+.left-menu {
+  grid-area: left-menu;
+  background-color: purple;
+}
+.header {
+  grid-area: header;
+  background-color: yellow;
+}
+
+.main {
+  grid-area: main;
+  background-color: orange;
+}

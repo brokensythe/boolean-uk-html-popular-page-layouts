@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: blueviolet;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template:
+    "header " 1fr
+    "main" 9fr /
+    1fr;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background-color: yellow;
+}
+
+.main {
+  grid-area: main;
+  background-color: orange;
+}

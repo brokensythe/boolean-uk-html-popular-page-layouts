@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: blueviolet;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template:
+    "header header header " 1fr
+    "left-menu main right-menu" 9fr /
+    4fr 10fr 1fr;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background-color: yellow;
+}
+
+.left-menu {
+  grid-area: .left-menu;
+  background-color: purple;
+}
+
+.main {
+  grid-area: main;
+  background-color: orange;
+}
+
+.right-menu {
+  grid-area: .right-menu;
+  background-color: silver;
+}
