@@ -35,3 +35,16 @@
   grid-area: .right-menu;
   background-color: silver;
 }
+
+@media screen and (max-width: 760px) {
+  .container {
+    display: grid;
+    grid-template:
+      "header header  " 1fr
+      "left-menu main " 9fr /
+      4fr 9fr;
+
+    width: 100vw;
+    height: 100vh;
+  }
+}
