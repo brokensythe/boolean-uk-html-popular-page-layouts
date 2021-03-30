@@ -8,9 +8,9 @@
 .container {
   display: grid;
   grid-template:
-    "header header header " 1fr
-    "left-menu main right-menu" 9fr /
-    4fr 10fr 1fr;
+    "header header header header " 1fr
+    "left-menu main settings toolbar" 9fr /
+    4fr 10fr 4fr 0.7fr;
 
   width: 100vw;
   height: 100vh;
@@ -31,8 +31,13 @@
   background-color: orange;
 }
 
-.right-menu {
-  grid-area: right-menu;
+.settings {
+  grid-area: settings;
+  background-color: #568498;
+}
+
+.toolbar {
+  grid-area: toolbar;
   background-color: silver;
 }
 

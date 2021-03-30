@@ -8,9 +8,9 @@
 .container {
   display: grid;
   grid-template:
-    "header " 1fr
-    "main" 9fr /
-    1fr;
+    "header header header " 1fr
+    "left-menu main right-menu" 9fr /
+    1fr 10fr 1fr;
 
   width: 100vw;
   height: 100vh;
@@ -21,7 +21,17 @@
   background-color: yellow;
 }
 
+.left-menu {
+  grid-area: left-menu;
+  background-color: aquamarine;
+}
+
 .main {
   grid-area: main;
   background-color: orange;
+}
+
+.right-menu {
+  grid-area: right-menu;
+  background-color: #266650;
 }
